@@ -4,7 +4,7 @@ pkill -9 -x cat
 pkill -9 -x openssl
 
 if [ ! -f recv_pipe ]; then
-  mkfifo recv_pipe;
+  touch recv_pipe;
 fi
 
 function cleanup() {

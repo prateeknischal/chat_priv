@@ -6,4 +6,4 @@ fi
 rm client_pipe
 mkfifo client_pipe
 
-openssl s_client -connect $1:4433 -brief -nbio 2>/dev/null 1>client_pipe
+openssl s_client -connect $1:4433 -quiet -nbio 1>client_pipe
