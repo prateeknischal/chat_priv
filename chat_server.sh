@@ -1,7 +1,7 @@
 #create a file if does not exists
 echo "killing cat and openssl"
-pkill -x --signal 9 cat
-pkill -x --signal 9 openssl
+pkill -9 -x cat
+pkill -9 -x openssl
 
 if [ ! -f recv_pipe ]; then
   mkfifo recv_pipe;
